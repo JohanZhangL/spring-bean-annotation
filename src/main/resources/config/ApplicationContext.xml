@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="user" class="gientech.spring.springbeanxml.model.User">
+        <constructor-arg index="0" value="zhangsan"/>
+        <constructor-arg index="1" value="18"/>
+        <constructor-arg index="2" >
+            <list>
+                <value>"tabletennis"</value>
+                <value>"volleyball"</value>
+            </list>
+        </constructor-arg>
+    </bean>
+    <bean id="user1" class="gientech.spring.springbeanxml.model.User">
+        <property name="name" value="lisi"/>
+        <property name="age" value="20"/>
+        <property name="favorites">
+            <list>
+                <value>"reading"</value>
+                <value>"sketch"</value>
+            </list>
+        </property>
+    </bean>
+</beans>
